@@ -3,15 +3,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
-/* logo */
-.logo {
-  display: block;
-  margin: auto;
-  max-width: 100%;
-  max-height: 100%;
-}
-
 /* main section */
 main {
   background-color: rgba(255, 255, 255, 0.8);
