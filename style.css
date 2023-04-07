@@ -4,14 +4,6 @@ body {
   padding: 0;
 }
 
-/* header */
-header {
-  background-image: url("Grand Line.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-}
-
 /* logo */
 .logo {
   display: block;
