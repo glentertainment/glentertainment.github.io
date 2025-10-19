@@ -1,29 +1,171 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Grand Line Entertainment</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Grand Line Entertainment crafts compelling stories for modern audiences." />
+    <title>Grand Line Entertainment</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
 </head>
 <body>
-<main>
-	<section>
-		<h2>Our Mission</h2>
-		<p>Grand Line Entertainment is dedicated to creating compelling and engaging stories that resonate with both new and old audiences. We believe that great storytelling has the power to transport people to new worlds and inspire them to see things in a different way. Our mission is to bring these stories to life and share them with the world.</p>
-	</section>
+<header class="site-header">
+    <div class="container">
+        <h1 class="brand" data-i18n="brand">Grand Line Entertainment</h1>
+        <nav aria-label="Primary">
+            <ul class="nav">
+                <li><a href="#mission">Mission</a></li>
+                <li><a href="#whatwedo">What We Do</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#contact">Connect</a></li>
+            </ul>
+        </nav>
+        <div class="lang-switch" aria-label="Language selector">
+            <button type="button" data-lang="en" class="lang active" aria-pressed="true">EN</button>
+            <button type="button" data-lang="te" class="lang" aria-pressed="false">TE</button>
+        </div>
+    </div>
+    
+</header>
 
-	<section>
-		<h2>Our Team</h2>
-		<p>At Grand Line Entertainment, we are passionate about storytelling. Our team is made up of talented writers and creatives who share this passion and are dedicated to creating the best stories possible. We believe that diversity is key to great storytelling, and our team represents a wide range of backgrounds and experiences.</p>
-	</section>
+<main class="container prose">
+    <section id="mission-card" class="section">
+        <p class="eyebrow" aria-hidden="true">MISSION</p>
+        <h2 class="hero-title" data-i18n="hero_title">Small films. Big feeling.</h2>
+        <p class="hero-sub" data-i18n="hero_body">We produce small-scale films and shorts rooted in South India — character-first, craft-driven, human.</p>
+        <p class="hero-cta"><a href="#whatwedo" class="cta" data-i18n="cta_work">See our work →</a></p>
+    </section>
+    
 
-	<section>
-		<h2>Our Process</h2>
-		<p>When creating a new story, we take a collaborative approach. Our team of writers and creatives work closely together to develop the plot, characters, and themes of the story. We believe that this collaborative process allows us to create stories that are more engaging and compelling. Once the story is developed, we work hard to bring it to life through high-quality writing, art, and animation.</p>
-	</section>
+    <section id="whatwedo" class="section">
+        <h2 data-i18n="what_title">What We Do</h2>
+        <p data-i18n="what_p1">We develop and produce independent projects that begin with strong ideas and grow through collaboration.</p>
+        <p data-i18n="what_p2">We work with emerging writers, directors, and artists to shape stories that fit the scale we have — practical to make, powerful to watch.</p>
+        <p data-i18n="what_p3">Whether it’s a short film, a micro-feature, or a series concept, we believe creativity thrives within real limits.</p>
+        <p data-i18n="what_p4">For us, constraint isn’t a problem — it’s a framework for invention.</p>
+    </section>
+
+    <section id="process" class="section">
+        <h2 data-i18n="process_title">How We Work</h2>
+        <p data-i18n="process_intro">Our process is evolving, but it always starts with something genuine — a spark that makes us care. We build each project from the ground up, keeping the story, characters, and audience at the center.</p>
+        <p data-i18n="process_step1"><strong>Start with the idea:</strong> Something simple, honest, and worth telling.</p>
+        <p data-i18n="process_step2"><strong>Shape it for scale:</strong> We design around what we have — people, places, and resources — so the story drives the production, not the other way around.</p>
+        <p data-i18n="process_step3"><strong>Stay agile:</strong> Small teams, short shoots, smart planning. We work lean and adapt quickly.</p>
+        <p data-i18n="process_step4"><strong>Finish with craft:</strong> Even with limited budgets, we give time to edit, sound, and color — because small films deserve care too.</p>
+        <p data-i18n="process_outro">We’re constantly refining how we work, learning from every project, and building a process that feels true to the indie spirit — efficient, creative, and collaborative.</p>
+    </section>
+
+    <section id="team" class="section">
+        <h2 data-i18n="team_title">Our Team</h2>
+        <p data-i18n="team_p1">We’re a collective of producers, filmmakers, and storytellers who believe sincerity beats spectacle.</p>
+        <p data-i18n="team_p2">Our different backgrounds and voices shape the way we work — grounded, open, and curious.</p>
+        <p data-i18n="team_p3">We value collaboration over hierarchy, process over prestige, and authenticity above all else.</p>
+        <p data-i18n="team_p4">At Grand Line, our goal is simple: tell meaningful stories with the means we have and make every project count.</p>
+    </section>
+
+    <section id="contact" class="section">
+        <h2 data-i18n="connect_title">Connect With Us</h2>
+        <p data-i18n="connect_body">Follow Grand Line Entertainment:</p>
+        <nav aria-label="Social media">
+            <ul class="social-links">
+                <li><a href="https://www.youtube.com/@GrandLineEntertainment" target="_blank" rel="noopener noreferrer" aria-label="YouTube">YouTube</a></li>
+                <li><a href="https://www.instagram.com/grandlineentertainment/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a></li>
+            </ul>
+        </nav>
+    </section>
 </main>
 
-<footer>
-	<p>&copy; 2023 Grand Line Entertainment</p>
+<footer class="site-footer">
+    <div class="container">
+        <p>&copy; <span id="year"></span> <span data-i18n="brand">Grand Line Entertainment</span></p>
+    </div>
+    <script>
+      const y = new Date().getFullYear();
+      document.getElementById('year').textContent = y;
+      const translations = {
+        en: {
+          brand: 'Grand Line Entertainment',
+          hero_title: 'Small films. Big feeling.',
+          hero_body: 'We produce small-scale films and shorts rooted in South India — character-first, craft-driven, human.',
+          cta_work: 'See our work →',
+          mission_title: 'Our Mission',
+          mission_p1: 'Grand Line Entertainment exists to produce stories that feel real, grounded, and human.',
+          mission_p2: 'We focus on small-format films, shorts, and videos that carry emotion and intent — stories rooted in South India, especially the Telugu region.',
+          mission_p3: 'Our goal is simple: to build sustainable, creative productions where storytelling and craft lead every choice.',
+          what_title: 'What We Do',
+          what_p1: 'We develop and produce independent projects that begin with strong ideas and grow through collaboration.',
+          what_p2: 'We work with emerging writers, directors, and artists to shape stories that fit the scale we have — practical to make, powerful to watch.',
+          what_p3: 'Whether it’s a short film, a micro-feature, or a series concept, we believe creativity thrives within real limits.',
+          what_p4: 'For us, constraint isn’t a problem — it’s a framework for invention.',
+          process_title: 'How We Work',
+          process_intro: 'Our process is evolving, but it always starts with something genuine — a spark that makes us care. We build each project from the ground up, keeping the story, characters, and audience at the center.',
+          process_step1: 'Start with the idea: Something simple, honest, and worth telling.',
+          process_step2: 'Shape it for scale: We design around what we have — people, places, and resources — so the story drives the production, not the other way around.',
+          process_step3: 'Stay agile: Small teams, short shoots, smart planning. We work lean and adapt quickly.',
+          process_step4: 'Finish with craft: Even with limited budgets, we give time to edit, sound, and color — because small films deserve care too.',
+          process_outro: 'We’re constantly refining how we work, learning from every project, and building a process that feels true to the indie spirit — efficient, creative, and collaborative.',
+          team_title: 'Our Team',
+          team_p1: 'We’re a collective of producers, filmmakers, and storytellers who believe sincerity beats spectacle.',
+          team_p2: 'Our different backgrounds and voices shape the way we work — grounded, open, and curious.',
+          team_p3: 'We value collaboration over hierarchy, process over prestige, and authenticity above all else.',
+          team_p4: 'At Grand Line, our goal is simple: tell meaningful stories with the means we have and make every project count.',
+          connect_title: 'Connect With Us',
+          connect_body: 'Follow Grand Line Entertainment:'
+        },
+        te: {
+          brand: 'గ్రాండ్ లైన్ ఎంటర్‌టైన్‌మెంట్',
+          hero_title: 'చిన్న చిత్రాలు. గొప్ప అనుభూతి.',
+          hero_body: 'దక్షిణ భారత మూలాలతో — పాత్రలపై దృష్టినివేసి, క్రాఫ్ట్‌తో చేసిన చిన్న సినిమాలు, షార్ట్‌లను మేము నిర్మిస్తాము.',
+          cta_work: 'మా పనిని చూడండి →',
+          mission_title: 'మా ధ్యేయం',
+          mission_p1: 'నిజమైన, నేలమీద నిలిచే, మనుషుల మనసులకు దగ్గరగా ఉండే కథలను చెప్పడానికే గ్రాండ్ లైన్ ఎంటర్‌టైన్‌మెంట్ ఉంది.',
+          mission_p2: 'దక్షిణ భారతదేశం, ముఖ్యంగా తెలుగు ప్రాంతపు భావోద్వేగాలు, ఉద్దేశాలు మోసుకెళ్లే చిన్న ఫార్మాట్ సినిమాలు, షార్ట్‌లు, వీడియోలపైనే మా దృష్టి.',
+          mission_p3: 'ప్రతి నిర్ణయంలో కథనం, నైపుణ్యమే ముందుండేలా—సుస్థిరంగా, సృజనాత్మకంగా నిర్మించడం మా లక్ష్యం.',
+          what_title: 'మేము ఏమి చేస్తాము',
+          what_p1: 'దృఢమైన ఆలోచనలతో మొదలై, సహకారంతో పెరిగే స్వతంత్ర ప్రాజెక్టులను మేము అభివృద్ధి చేసి నిర్మిస్తాము.',
+          what_p2: 'ఉదయిస్తున్న రచయితలు, దర్శకులు, కళాకారులతో కలిసి—మా స్కేల్‌కు సరిపోయేలా కథలను మలుస్తాము: చేయడానికి సులభం, చూడడానికి ప్రభావవంతం.',
+          what_p3: 'షార్ట్ ఫిల్మ్, మైక్రో-ఫీచర్, లేదా సీరీస్ కాన్సెప్ట్ అయినా—నిజ జీవిత పరిమితులలోనే సృజనాత్మకత వికసిస్తుందని మా నమ్మకం.',
+          what_p4: 'మాకు పరిమితి సమస్య కాదు—ఆవిష్కరణకు ఫ్రేమ్‌వర్క్.',
+          process_title: 'మేము ఎలా పనిచేస్తాము',
+          process_intro: 'మా ప్రక్రియ మారుతూనే ఉంటుంది; కానీ ప్రతి పర్యాయం మనసును కదిలించే నిజమైన స్పార్క్‌తోనే ప్రారంభమవుతుంది. కథ, పాత్రలు, ప్రేక్షకులనే కేంద్రంగా పెట్టి ప్రాజెక్ట్‌ను నిర్మిస్తాము.',
+          process_step1: 'ఆలోచనతో మొదలు: సరళమైనది, నిజాయితీగలది, చెప్పదగినది.',
+          process_step2: 'స్కేల్‌కు తగ్గట్టు మలచడం: మన దగ్గర ఉన్న మనుషులు, ప్రదేశాలు, వనరుల చుట్టూ డిజైన్ చేసి—ప్రొడక్షన్‌ను కాదు, కథనే ముందుకు నడిపిస్తాము.',
+          process_step3: 'చురుకైన విధానం: చిన్న టీమ్‌లు, తక్కువ రోజుల షూట్లు, తెలివైన ప్లానింగ్—త్వరగా అలవాటు పడతాము.',
+          process_step4: 'క్రాఫ్ట్‌తో ముగింపు: బడ్జెట్ పరిమితులున్నప్పటికీ ఎడిట్, సౌండ్, కలర్‌కు సమయం కేటాయిస్తాము—చిన్న సినిమాలు కూడా శ్రద్ధకు అర్హమే.',
+          process_outro: 'ప్రతి ప్రాజెక్ట్‌తో నేర్చుకుంటూ, సమర్థమైన, సృజనాత్మక, సహకారభరితమైన ఇండీ స్పిరిట్‌కు నిజంగా సరిపోయే ప్రక్రియను నిర్మిస్తున్నాము.',
+          team_title: 'మా బృందం',
+          team_p1: 'ప్రదర్శన కంటే నిజాయితీకి విలువనిచ్చే నిర్మాతలు, చిత్రకారులు, కథకుల సమూహం మేము.',
+          team_p2: 'మా భిన్నమైన నేపథ్యాలు, స్వరాలు—మన పనిని నేలతత్త్వంతో, తెరవెనుక, ఆసక్తితో ముందుకు నడిపిస్తాయి.',
+          team_p3: 'హైరార్కీ కంటే సహకారం, ప్రతిష్ట కంటే ప్రక్రియ, అన్నిటికంటే నిజమైనతనాన్ని మేము విలువగా భావిస్తాము.',
+          team_p4: 'గ్రాండ్ లైన్‌లో మా సరళ లక్ష్యం: మా చేతిలో ఉన్న వనరులతో అర్థవంతమైన కథలు చెప్పడం, ప్రతి ప్రాజెక్ట్‌ను విలువైనదిగా మలచడం.',
+          connect_title: 'మాతో కలవండి',
+          connect_body: 'గ్రాండ్ లైన్ ఎంటర్‌టైన్‌మెంట్‌ను ఫాలో అవ్వండి:'
+        }
+      };
+
+      function applyLang(lang) {
+        const dict = translations[lang] || translations.en;
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+          const key = el.getAttribute('data-i18n');
+          if (dict[key]) el.textContent = dict[key];
+        });
+        document.querySelectorAll('.lang').forEach(btn => {
+          const active = btn.getAttribute('data-lang') === lang;
+          btn.classList.toggle('active', active);
+          btn.setAttribute('aria-pressed', String(active));
+        });
+      }
+
+      document.querySelectorAll('.lang').forEach(btn => {
+        btn.addEventListener('click', () => applyLang(btn.getAttribute('data-lang')));
+      });
+
+      // default to English on load
+      applyLang('en');
+    </script>
 </footer>
 </body>
 </html>
