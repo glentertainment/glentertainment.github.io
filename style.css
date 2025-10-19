@@ -183,7 +183,23 @@ a:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
 }
 
 @media (min-width: 960px) {
-  /* split only How We Work on wide screens */
-  #process.section { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
-  #process.section p { margin-bottom: 12px; }
+  /* How We Work: two-column rhythm */
+  #process.section { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 32px; align-items: start; }
+  #process.section .panel { grid-column: 2; }
 }
+
+/* Intro panel */
+.panel {
+  background: rgba(233, 241, 251, 0.6);
+  border: 1px solid var(--hairline);
+  border-radius: 10px;
+  padding: 16px 16px;
+}
+
+/* Numbered steps */
+.steps { counter-reset: step; list-style: none; padding: 0; margin: 16px 0 12px; }
+.steps li { counter-increment: step; display: grid; grid-template-columns: 36px 1fr; gap: 12px; padding: 10px 0; border-top: 1px solid var(--hairline); }
+.steps li:first-child { border-top: 0; }
+.steps li::before { content: counter(step, decimal-leading-zero); font-feature-settings: "tnum" on; color: #5A7FB5; font-weight: 600; }
+.step-title { display: block; }
+.muted { color: var(--muted); }
