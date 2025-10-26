@@ -248,6 +248,28 @@ p {
   flex-wrap: wrap;
 }
 
+.hero-image {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+}
+
+.about-grid {
+  display: grid;
+  gap: clamp(24px, 4vw, 48px);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  align-items: start;
+}
+
+.about-vision {
+  background: rgba(15, 23, 42, 0.04);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-lg);
+  padding: clamp(20px, 3vw, 32px);
+}
+
 .social-chip {
   display: inline-flex;
   align-items: center;
@@ -286,6 +308,48 @@ p {
   font-weight: 600;
 }
 
+.service-grid {
+  margin-top: 2.5rem;
+  display: grid;
+  gap: clamp(16px, 3vw, 28px);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.service-card {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-line);
+  padding: clamp(20px, 3vw, 28px);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.service-head {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.service-step {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 600;
+}
+
+.service-card ul {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--color-muted);
+}
+
 .ratio-4-3 {
   aspect-ratio: 4 / 3;
 }
@@ -313,6 +377,13 @@ p {
 .feature-icon {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
+}
+
+.why-grid {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
 /* Work gallery */
@@ -355,6 +426,27 @@ p {
 .work-video figcaption {
   font-weight: 600;
   color: var(--color-ink);
+}
+
+.work-video .work-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.work-video.upcoming .video-frame.placeholder {
+  display: grid;
+  place-items: center;
+  background: rgba(15, 23, 42, 0.08);
+  color: var(--color-ink);
+  font-weight: 600;
+}
+
+.work-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
 /* Process */
