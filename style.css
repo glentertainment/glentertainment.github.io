@@ -99,13 +99,6 @@ h2 {
   color: var(--color-muted);
 }
 
-.prose-block {
-  display: flex;
-  flex-direction: column;
-  gap: 0.9rem;
-  max-width: clamp(640px, 80vw, 960px);
-}
-
 p {
   margin: 0 0 1rem;
 }
@@ -182,10 +175,6 @@ p {
   font-weight: 500;
 }
 
-.enquire-desktop {
-  display: inline-flex;
-}
-
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -200,10 +189,6 @@ p {
   width: 24px;
   height: 2px;
   background: var(--color-ink);
-}
-
-.nav-mobile-cta {
-  display: none;
 }
 
 /* Hero */
@@ -293,21 +278,6 @@ p {
   transform: translateY(-1px);
 }
 
-.media-card {
-  background: #0f172a;
-  color: #ffffff;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow);
-  display: grid;
-  place-items: center;
-  text-align: center;
-  padding: 1rem;
-}
-
-.media-card span {
-  font-weight: 600;
-}
-
 .service-grid {
   margin-top: 2.5rem;
   display: grid;
@@ -356,14 +326,6 @@ p {
 
 .ratio-16-9 {
   aspect-ratio: 16 / 9;
-}
-
-/* Features */
-.features-grid {
-  margin-top: 2.5rem;
-  display: grid;
-  gap: 1.25rem;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
 .feature-card {
@@ -618,15 +580,6 @@ textarea {
     padding: 1rem;
   }
 
-  .nav-mobile-cta {
-    display: block;
-    width: 100%;
-  }
-
-  .enquire-desktop {
-    display: none;
-  }
-
   .nav-toggle {
     display: flex;
   }
@@ -642,12 +595,8 @@ textarea {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .features-grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
   .work-gallery {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .process-steps {
@@ -662,20 +611,4 @@ textarea {
   .balance-text {
     hyphens: auto;
   }
-}
-.hero-image {
-  width: 100%;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow);
-  object-fit: cover;
-  aspect-ratio: 4 / 3;
-}
-
-.hero-placeholder {
-  background: rgba(15, 23, 42, 0.85);
-  padding: clamp(24px, 4vw, 32px);
-  gap: 0.5rem;
-}
-.hero-placeholder p {
-  margin: 0;
 }
